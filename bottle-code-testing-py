@@ -1,0 +1,7 @@
+from bottle import route, template, run
+
+@route(/home/)
+def home():
+    return "<h1> My process manager program </h1>"
+
+run(host=127.0.0.1, port=8080, debug=True)
